@@ -4,8 +4,8 @@ import Navbar from './Components/Navbar'
 
 export default function App() {
   return (
-    <div className='container flex flex-col items-center justify-center w-full bg-red-400  text-white'>
-    <Navbar/>
+    <div className='container flex flex-col items-center justify-center w-full bg-black'>
+      <Navbar/>
       <Home/>
     </div>
   )
