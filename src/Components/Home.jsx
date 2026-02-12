@@ -23,40 +23,70 @@ export default function Home() {
     <div className=' text-white flex flex-col justify-center w-full border-t  border-gray-800'>
         <div className='w-[85%] bg-black  mx-auto border-gray-800 border-x h-full flex flex-col items-center pt-30' id='home'>
           
-            <div className='flex gap-2 py-2'>
-              <MoveUpRight size={20}/>
-              <h1 className=' text-sm'>Trusted by 50,000+ users worldwide</h1>
-            </div>
-            <div className='text-6xl/normal font-bold text-center py-2 bg-linear-to-r from-white to-gray-300 bg-clip-text text-transparent'>
-              <h1>Everthing You Need To</h1>
-              <h1><span className='text-[#2eff12]'>Scale</span> Your Agency</h1>
-            </div>
-          <div className='text-wrap text-center py-2'>
-            <p>Explore amet minim mollit non deserunt ullamco est sit aliqua dolor</p>
-            <p>do amet sint. Velit officia consequat</p>
-          </div>
+            {/* Top badge */}
+<div className='flex gap-2 py-2 items-center justify-center text-center'>
+  <MoveUpRight size={20}/>
+  <h1 className='text-sm'>Trusted by 50,000+ users worldwide</h1>
+</div>
 
-            <div className='flex gap-5 py-4'>
-              <Button1/>
-              <button 
-              className=' border-2
-               rounded-xl flex px-5 py-2 border-blue-200'
-                > 
-                See How It's Work <MoveDownRight/> </button>
-            </div>
-            <div className='flex py-3 pb-10'>
-              <div className='flex'>
-                <Radar  color='red' />
-                <div className='flex gap-1 px-2 border-r-2 '>
-                  <Star size={20} color='yellow' fill='yellow'/>
-                  <Star size={20} color='yellow' fill='yellow'/>
-                  <Star size={20} color='yellow' fill='yellow'/>
-                  <Star size={20} color='yellow' fill='yellow'/>
-                  <Star size={20} color='yellow' fill='yellow'/>
-                </div>
-              </div>
-              <h1 className='pl-2 text-base'>Innovating UI solution 2025 by Prebuiltui</h1>
-            </div>
+
+{/* Main heading */}
+<div className='font-bold text-center py-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent'>
+
+  <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>
+    Everything You Need To
+  </h1>
+
+  <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>
+    <span className='text-[#2eff12]'>Scale</span> Your Agency
+  </h1>
+
+</div>
+
+
+{/* Description */}
+<div className='text-center py-2 px-4'>
+  <p className='text-sm sm:text-base'>
+    Explore amet minim mollit non deserunt ullamco est sit aliqua dolor
+  </p>
+  <p className='text-sm sm:text-base'>
+    do amet sint. Velit officia consequat
+  </p>
+</div>
+
+
+{/* Buttons */}
+<div className='flex flex-col sm:flex-row gap-4 py-4 items-center justify-center'>
+
+  <Button1/>
+
+  <button className='border-2 rounded-xl px-5 py-2 border-blue-200 flex items-center gap-2'>
+    See How It's Work <MoveDownRight/>
+  </button>
+
+</div>
+
+
+{/* Rating */}
+<div className='flex flex-col sm:flex-row items-center justify-center gap-2 py-3 pb-10 text-center'>
+
+  <div className='flex items-center'>
+    <Radar color='red'/>
+    <div className='flex gap-1 px-2 sm:border-r-2 border-gray-600'>
+      <Star size={20} color='yellow' fill='yellow'/>
+      <Star size={20} color='yellow' fill='yellow'/>
+      <Star size={20} color='yellow' fill='yellow'/>
+      <Star size={20} color='yellow' fill='yellow'/>
+      <Star size={20} color='yellow' fill='yellow'/>
+    </div>
+  </div>
+
+  <h1 className='text-sm sm:text-base'>
+    Innovating UI solution 2025 by Prebuiltui
+  </h1>
+
+</div>
+
             {/* hero img */}
             <div className='p-5 border-y border-gray-800'>
              <img src='/src/assets/hero-img.png' className='rounded-2xl'/>
@@ -100,7 +130,7 @@ export default function Home() {
                {/* footer */}
 
                <Footer/>
-               <div className='border-t border-gray-800 py-8 text-gray-500 w-[117%] text-center'>
+               <div className='border-t border-gray-800 py-8 text-gray-500 w-full text-center'>
                   Copyright 2026 ©PrebuiltUI • Distributed byThemeWagon • All Right Reserved.
                </div>
         </div>

@@ -21,7 +21,7 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <div className='hidden md:flex w-2/3 px-4 justify-between items-center gap-8'>
 
-        <ul className='flex gap-8'>
+        <ul className='flex gap-8 list-none'>
           <li><a href="#home">Home</a></li>
           <li><a href="#product">Product</a></li>
           <li><a href="#resource">Resources</a></li>
@@ -46,7 +46,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {open && (
 
-        <div className='absolute top-full left-0 w-full bg-black flex flex-col items-center gap-6 py-6 md:hidden'>
+        <div className='absolute top-full left-0 w-full bg-black flex flex-col items-center gap-6 py-6 md:hidden list-none'>
 
           <li><a href="#home">Home</a></li>
           <li><a href="#product">Product</a></li>
