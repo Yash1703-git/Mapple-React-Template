@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Atom, Menu, X } from 'lucide-react'
 import Button1 from './Button-1'
 
@@ -21,12 +22,13 @@ export default function Navbar() {
       <div className='hidden md:flex w-2/3 px-4 justify-between items-center gap-8'>
 
         <ul className='flex gap-8'>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Product</a></li>
-          <li><a href='#'>Resources</a></li>
-          <li><a href='#'>Pricing</a></li>
-          <li><a href='#'>About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#resource">Resources</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
+
         <Button1/>
       </div>
 
@@ -46,11 +48,11 @@ export default function Navbar() {
 
         <div className='absolute top-full left-0 w-full bg-black flex flex-col items-center gap-6 py-6 md:hidden'>
 
-          <a href='#'>Home</a>
-          <a href='#'>Product</a>
-          <a href='#'>Resources</a>
-          <a href='#'>Pricing</a>
-          <a href='#'>About</a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#resource">Resources</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
 
           <button className='bg-[#15b100] px-5 py-2 rounded-lg'>
             Get Started

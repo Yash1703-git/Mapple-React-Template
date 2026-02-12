@@ -33,10 +33,11 @@ export default function Resource() {
                     return(
                         <div key={idx} className='relative group overflow-hidden rounded-xl'  >
                             {/* imges */}
-                            <img src={data.logo} className='h-full w-full object-cover'/>
+                            <img src={data.logo} className='h-full w-full object-cover '/>
+                            <div className='absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300'></div>
 
                             {/* button  */}
-                            <div className='absolute bottom-[-25] left-0 w-full flex justify-center transition-all duration-300 group-hover:bottom-4'>
+                            <div className='absolute bottom-[-25] left-0 w-full flex justify-center transition-all duration-300 group-hover:bottom-4 '>
                                 <div className='bg-white text-black py-1.5 px-4 w-90 rounded-xl flex justify-between items-center'>
                                     <p className='font-semibold '>{data.text}</p>
                                     <button className='bg-[#34ff19] rounded-full p-1'><MousePointerClick /></button>
